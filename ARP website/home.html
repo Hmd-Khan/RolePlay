@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asian Roleplay</title>
+    <link rel="stylesheet" type="text/css" href="hm.css">
+    <meta name="description"
+        content="Join our Asian Roleplay community, share your experiences, and connect with other members.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="new.html">What's New</a></li>
+                <li><a href="#">Members</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button id="loginButton" class="shift-left">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <p>We are thrilled to welcome you to our GTA 5 Roleplay server, a unique space where you can connect with
+                fellow gamers,
+                create unforgettable stories, and dive into the vibrant world of Los Santos.</p>
+            <button id="registerNow">Register Now!</button>
+        </section>
+
+        <section class="forum">
+        <button id="newPostButton" onclick="window.location.href='new.html'">New Post</button>
+            <div class="forum-section">
+                <h2>Asian Roleplay</h2>
+                <ul>
+                    <li><a href="#" id="faq">Frequently asked questions (FAQ)</a></li>
+                    <li><a href="#" id="donate">Donate service</a></li>
+                    <li><a href="#" id="technical">Technical section</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <section class="about-us">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img src="img/aboutUs.jpg" alt="About Us">
+                <div class="overlay">
+                    <div class="text">
+                        <div class="play-button">&#9658;</div>
+                        <p>ABOUT US</p>
+                        <p>IN 2 MINUTES</p>
+                    </div>
+                </div>
+            </a>
+        </section> -->
+
+        <section class="about-us">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kd6E2Gc6eH4?si=f1biX2PwRTE1CFJU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <div class="container">
+            <div class="step step1">
+                <h2>STEP 1</h2>
+                <h3>REGISTER AN ACCOUNT</h3>
+                <p>You'll need a licensed copy of Grand Theft Auto V</p>
+                <button id="startRegistration">REGISTRATION</button>
+            </div>
+            <div class="step step2">
+                <h2>STEP 2</h2>
+                <h3>DOWNLOAD THE LAUNCHER</h3>
+                <p>Enjoy usability right now</p>
+                <button>DOWNLOAD</button>
+            </div>
+            <br>
+            <div class="step step2">
+                <h2>STEP 3</h2>
+                <h3>INSTALL THE LAUNCHER</h3>
+                <p>Enjoy the best vurtual world</p>
+                <button>DOWNLOAD</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <p id="modal-text">Some text in the Modal..</p>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <form>
+                <h1>REGISTRATION</h1>
+                <label for="fname">Ingame First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Ingame Last Name:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <label for="repeatPassword">Repeat Password:</label>
+                <input type="password" id="repeatPassword" name="repeatPassword">
+                <input type="checkbox" id="policy" name="policy">
+                <label for="policy">I agree with policy privacy and handling personal data</label>
+                <input type="submit" value="REGISTRATION">
+            </form>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <form>
+                <h1>LOGIN</h1>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="LOGIN">
+                <p>If you don't have an account</p>
+                <button type="button" id="registerNowFromLogin">Register Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="poster">
+            <div class="menu">
+                <div onclick="showContent('autopark')">
+                    <img src="img/cool-car.jpg" alt="Autopark">
+                    <p>CREATE YOUR AUTOPARK</p>
+                    <p>SELECT FROM 300 VEHICLES</p>
+                </div>
+                <div onclick="showContent('residents')">
+                    <img src="img/event-1.jpg" alt="Residents">
+                    <p>GET AHEAD OF THE RESIDENTS</p>
+                    <p>COMPLETE IN OVER MORE THAN 15 EVENTS</p>
+                </div>
+                <div onclick="showContent('gangster')">
+                    <img src="img/gangter-1.jpg" alt="Gangster">
+                    <p>BECOME A GANGSTER</p>
+                    <p>BREAK THE LAW ON THE GRAND RP SERVER</p>
+                </div>
+                <div onclick="showContent('business')">
+                    <img src="img/businessmen.avif" alt="Business">
+                    <p>MANAGE A BUSINESS</p>
+                    <p>MANAGE SUPPLIES SET PRICES</p>
+                </div>
+            </div>
+            <div class="content" id="content">
+                <img src="https://cdn.motor1.com/images/mgl/3xmKR/s1/2018-formula-e.jpg" alt="Placeholder">
+                <div class="text-overlay">
+                    <h2>300+ COOL CARS</h2>
+                    <p>DO YOU LIKE TO DRIVE? CHOOSE A CAR FOR YOURSELF, A NIGHT DRIFTER OR A DASHING DRAG RACER?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="clearfix">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>Asian Roleplay</h2>
+                    <p>Join our immersive GTA 5 roleplay server and experience thrilling stories, connections, and
+                        gameplay like
+                        never before.</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="new.html">What's New</a></li>
+                        <li><a href="#">Members</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-telegram"></i></a>
+                        <a href="#"><i class="bx bxl-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p>Email: support@asianroleplay.com</p>
+                    <p>Discord: discord.gg/asianrp</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Asian Roleplay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

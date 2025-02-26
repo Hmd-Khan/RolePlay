@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>What's New - Asian Roleplay</title>
+    <link rel="stylesheet" type="text/css" href="hm.css">
+    <meta name="description"
+        content="Stay updated with the latest changes and additions to our Asian Roleplay GTA 5 server.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Maintaining the same header structure -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="#" class="active">What's New</a></li>
+                <li><a href="#">Members</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button id="loginButton" class="shift-left" onclick="document.getElementById('loginModal').style.display='block'">Login</button>
+        </div>
+    </header>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="document.getElementById('loginModal').style.display='none'">×</span>
+                <form>
+                    <h1>LOGIN</h1>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <input type="submit" value="LOGIN">
+                    <p>If you don't have an account</p>
+                    <button type="button" id="registerNowFromLogin" onclick="document.getElementById('registerModal').style.display='block'">Register Now</button>
+                </form>
+            </div>
+        </div>      
+
+    <main>
+        <div class="updates-container">
+            <h1>Server Updates & News</h1>
+
+            <div class="filter-section">
+                <button class="filter-button" data-type="all">All Updates</button>
+                <button class="filter-button" data-type="feature">New Features</button>
+                <button class="filter-button" data-type="bugfix">Bug Fixes</button>
+                <button class="filter-button" data-type="event">Events</button>
+            </div>
+
+            <div class="update-card">
+                <div class="update-header">
+                    <span class="update-type feature">New Feature</span>
+                    <span class="update-date">February 23, 2025</span>
+                </div>
+                <h2>New Business System Released</h2>
+                <p>We're excited to announce our completely revamped business system! Now you can:</p>
+                <ul>
+                    <li>Manage multiple business locations</li>
+                    <li>Hire and manage NPC employees</li>
+                    <li>Set dynamic pricing based on market conditions</li>
+                    <li>Participate in the new business rivalry system</li>
+                </ul>
+            </div>
+
+            <div class="update-card">
+                <div class="update-header">
+                    <span class="update-type event">Event</span>
+                    <span class="update-date">February 20, 2025</span>
+                </div>
+                <h2>Lunar New Year Festival</h2>
+                <p>Join us for our special Lunar New Year celebration! Special activities include:</p>
+                <ul>
+                    <li>Dragon parade through Los Santos</li>
+                    <li>Street market festival in Little Seoul</li>
+                    <li>Special limited-time vehicles with traditional designs</li>
+                    <li>Exclusive holiday missions with unique rewards</li>
+                </ul>
+            </div>
+
+            <div class="update-card">
+                <div class="update-header">
+                    <span class="update-type bugfix">Bug Fix</span>
+                    <span class="update-date">February 18, 2025</span>
+                </div>
+                <h2>Server Stability Improvements</h2>
+                <p>We've implemented several important fixes:</p>
+                <ul>
+                    <li>Resolved vehicle persistence issues in garages</li>
+                    <li>Fixed money transaction delays in businesses</li>
+                    <li>Improved server performance during peak hours</li>
+                    <li>Addressed inventory synchronization issues</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+<footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Asian Roleplay</h2>
+                <p>Join our immersive GTA 5 roleplay server and experience thrilling stories, connections, and gameplay
+                    like
+                    never before.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="new.html">What's New</a></li>
+                    <li><a href="#">Members</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#"><i class="bx bxl-telegram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: support@asianroleplay.com</p>
+                <p>Discord: discord.gg/asianrp</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Asian Roleplay. All rights reserved.</p>
+        </div>
+</footer>
+        
+    <script>
+        // Filter functionality
+    document.querySelectorAll('.filter-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const filterType = button.dataset.type;
+            const cards = document.querySelectorAll('.update-card');
+
+            cards.forEach(card => {
+                const cardType = card.querySelector('.update-type').classList.contains(filterType);
+
+                if (filterType === 'all' || cardType) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    </script>
+</body>
+
+</html>

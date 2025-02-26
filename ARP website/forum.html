@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="hm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="new.html">What's New</a></li>
+                <li><a href="#">Members</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button id="loginButtonForum" class="shift-left">Login</button>
+        </div>
+    </header>
+
+    <main class="welcome">
+        <h1>WELCOME!</h1>
+        <p>By registering with us, you'll be able to discuss, share & private message with other members of our
+            community.<br> Join us today and be a part of an engaging and supportive community where your voice matters!
+        </p>
+        <button id="registerNowButton" class="register-now">SIGNUP NOW!</button>
+    </main>
+
+    <section class="forum">
+        <button id="newPostButton" onclick="window.location.href='new.html'">New Post</button>
+        <button id="discordButton" onclick="window.location.href='https://discord.com/invite/Rm5AQ7jA'">Join our Discord</button>
+        <div class="forum-section">
+            <h2>Asian Roleplay</h2>
+            <ul>
+                <li><a href="#" id="faq">Frequently asked questions (FAQ)</a></li>
+                <li><a href="#" id="donate">Donate service</a></li>
+                <li><a href="#" id="technical">Technical section</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="game-section">
+        <div class="breadcrumb">
+            <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; <span>Game Section</span>
+        </div>
+        <h2>Game Section</h2>
+        <div class="server">
+            <h3 id="server1" class="server-title">Asian Roleplay | AS</h3>
+            <div id="server1-content" class="server-content">
+                <ul class="server-subsections">
+                    <li>
+                        <a href="#" data-section="server-rules" class="view-server-rules">Server Rules</a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="complaints" class="view-complaints">Complaints <span
+                                class="new-tag">NEW</span></a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="applications" class="view-applications">Applications <span class="new-tag">NEW</span></a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="state-organizations" class="view-state-organization">State organizations</a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="ghetto">Ghetto</a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="private-organizations">Private organizations <span
+                                class="new-tag">NEW</span></a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="Role Play biographies" class ="view-roleplay-biographies">Role Play biographies<span
+                                class="new-tag">NEW</span></a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                    <li>
+                        <a href="#" data-section="Global Events">Global Events <span class="new-tag">NEW</span></a>
+                        <span class="thread-count">0 Threads</span>
+                        <span class="message-count">0 Messages</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="server-rules-section" style="display: none;">
+        <div class="breadcrumb">
+            <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; <a href="#" class="back-to-game-section">Game
+                Section</a> &gt; <span>Server Rules</span>
+        </div>
+        <h2>Server Rules</h2>
+        <table class="rules-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Replies</th>
+                    <th>Views</th>
+                    <th>Latest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-rule="general-rule">
+                    <td><span class="important-tag">IMPORTANT</span> General Rules</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jan 1, 2025</td>
+                </tr>
+                <tr data-rule="election-rule">
+                    <td><span class="important-tag">IMPORTANT</span> Election Rules</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jan 1, 2025</td>
+                </tr>
+                <tr data-rule="rules-for-leader">
+                    <td><span class="important-tag">IMPORTANT</span> Rules for Leaders</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jan 1, 2025</td>
+                </tr>
+                <tr data-rule="event-rule">
+                    <td><span class="important-tag">IMPORTANT</span> Event Rules</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jan 1, 2025</td>
+                </tr>
+                <tr data-rule="ghetto-rule">
+                    <td><span class="important-tag">IMPORTANT</span> Ghetto Rules</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jan 1, 2025</td>
+                </tr>
+                <tr data-rule="rules-of-state">
+                    <td><span class="important-tag">IMPORTANT</span> Rules of State</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Jan 1, 2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+<section class="complaint-section" style="display: none;">
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; <a href="#" class="back-to-game-section">Game Section</a>
+        &gt; <span>Complaints Section</span>
+    </div>
+    <h2>Complaints Section</h2>
+    <table class="complaints-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Replies</th>
+                <th>Views</th>
+                <th>Latest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-complaint="administrators-and-assistants">
+                <td>Complaints about administrators and assistants<span class="new-tag">NEW</span> </td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-complaint="players">
+                <td>Complaints about players<span class="new-tag">NEW</span></td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section class="applications-section" style="display: none;">
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; <a href="#" class="back-to-game-section">Game Section</a>
+        &gt; <span>Applications Section</span>  
+    </div>
+    <h2>Applications Section</h2>
+    <table class="applications-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Replies</th>
+                <th>Views</th>
+                <th>Latest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-application="admins">
+                <td>Application for admins<span class="new-tag">NEW</span> </td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-application="leaders">
+                <td>Application for leaders<span class="new-tag">NEW</span></td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section class="state-organization-section" style="display: none;">
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; <a href="#" class="back-to-game-section">Game Section</a>
+        &gt; <span>State Organization Section</span>
+    </div>
+    <h2>State Organization Section</h2>
+    <table class="state-organization-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Replies</th>
+                <th>Views</th>
+                <th>Latest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-organization="government">
+                <td>Government</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-organization="central-police">
+                <td>Central Police</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-organization="traffic-police">
+                <td>Traffic Police</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-organization="national-guard">
+                <td>National Guard</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-organization="ems">
+                <td>EMS</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-organization="fbi">
+                <td>Federal Bureau of Investigation</td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<section class="roleplay-biographies-section" style="display: none;">
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; <a href="#">Forums</a> &gt; <a href="#" class="back-to-game-section">Game Section</a>
+        &gt; <span>Role Play Biographies Section</span>
+    </div>
+    <h2>Role Play Biographies Section</h2>
+    <table class="roleplay-biographies-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Replies</th>
+                <th>Views</th>
+                <th>Latest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-biographies="accepted">
+                <td>Accepted biographies<span class="new-tag">NEW</span> </td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+            <tr data-biographies="leaders">
+                <td>Rejected biographies<span class="new-tag">NEW</span></td>
+                <td>0</td>
+                <td>0</td>
+                <td>Jan 1, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!--form for complaint section-->
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="forum-form">
+                <label for="thread-title" class="thread-title-label">Thread title</label>
+                <input type="text" id="thread-title" name="thread-title" placeholder="Enter thread title..." required>
+
+                <textarea placeholder="Your message here..." required></textarea>
+
+                <label for="your-id">Your ID:</label>
+                <input type="text" id="your-id" name="your-id" required>
+
+                <label for="players-nickname">Players nickname:</label>
+                <input type="text" id="players-nickname" name="players-nickname" required>
+
+                <label for="administrators-nickname">Administrators nickname:</label>
+                <input type="text" id="administrators-nickname" name="administrators-nickname" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="proofs">Proofs:</label>
+                <input type="url" id="proofs" name="proofs" placeholder="LINK ONLY [MULTIPLE POSSIBLE]" multiple>
+
+                <div class="options">
+                    <input type="checkbox" id="watch-thread" name="watch-thread">
+                    <label for="watch-thread">Watch this thread...</label>
+                    <br>
+                    <input type="checkbox" id="email-notifications" name="email-notifications">
+                    <label for="email-notifications">and receive email notifications</label>
+                </div>
+
+                <button type="submit">Post Thread</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required>
+
+                <label for="discord">Discord:</label>
+                <input type="text" id="discord" name="discord">
+
+                <input type="checkbox" id="policy" name="policy">
+                <label for="policy">I agree with policy privacy and handling personal data</label>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form class="login">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Asian Roleplay</h2>
+                <p>Join our immersive GTA 5 roleplay server and experience thrilling stories, connections, and gameplay like
+                    never before.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="new.html">What's New</a></li>
+                    <li><a href="#">Members</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#"><i class="bx bxl-telegram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: support@asianroleplay.com</p>
+                <p>Discord: discord.gg/asianrp</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Asian Roleplay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
